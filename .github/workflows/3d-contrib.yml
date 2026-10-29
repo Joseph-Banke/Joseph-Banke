@@ -15,6 +15,7 @@ jobs:
           # GITHUB_TOKEN only sees public work; add a CONTRIB_TOKEN secret (classic PAT, repo + read:user) to count private contributions
           GITHUB_TOKEN: ${{ secrets.CONTRIB_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+      - run: sed -i 's/<rect x="0" y="0" width="1280" height="850" class="fill-bg">/<rect x="0" y="0" width="1280" height="850" fill="none">/' profile-3d-contrib/*.svg
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
