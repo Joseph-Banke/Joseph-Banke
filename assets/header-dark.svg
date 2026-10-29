@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Joseph Banke — software engineer in Lagos">
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Helvetica,Arial,sans-serif}
+.in{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.15s} .d2{animation-delay:.35s}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.2s .5s cubic-bezier(.65,0,.35,1) forwards}
+.sun{opacity:0;animation:fade 1.2s 3.2s forwards}
+@keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+</style>
+<text class="in" x="0" y="96" font-size="76" font-weight="700" letter-spacing="-2.5" fill="#f5f5f7">Joseph Banke</text>
+<text class="in d1" x="2" y="148" font-size="28" font-weight="500" letter-spacing="-.4" fill="#f5f5f7">Software engineer in Lagos, building for Nigeria.</text>
+<text class="in d2" x="2" y="186" font-size="22" fill="#98989d">Nikea Tech Solutions · nikea.llc</text>
+<circle class="sun" cx="1010" cy="240" r="26" fill="#30d158"/>
+<g fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+<path class="draw" pathLength="1" d="M0 330 H50 V300 H80 V275 H100 V300 H125 V255 H145 V242 H160 V255 H180 V315 H210 V232 H250 V315 H275 V285 H295 V225 H318 V214 H332 V225 H352 V315 H385 V268 H412 V315 H440 V246 H460 V315 H520"/>
+<path class="draw" pathLength="1" d="M520 315 C 700 300, 960 300, 1200 314" style="animation-delay:1.6s"/>
+<path class="draw" pathLength="1" d="M520 330 H1200" stroke-dasharray="1" stroke-opacity=".35" style="animation-delay:2s"/>
+</g>
+</svg>
